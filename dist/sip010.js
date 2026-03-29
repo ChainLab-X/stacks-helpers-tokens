@@ -4,8 +4,8 @@ exports.sip010Transfer = sip010Transfer;
 exports.getSip010Balance = getSip010Balance;
 exports.getSip010Metadata = getSip010Metadata;
 const transactions_1 = require("@stacks/transactions");
-const contracts_1 = require("@stacks-helpers/contracts");
-const types_1 = require("@stacks-helpers/types");
+const contracts_1 = require("@thebabalola/contracts");
+const types_1 = require("@richiey1/types");
 function sip010Transfer(tokenContract, tokenAddress, amount, sender, recipient, senderKey, network) {
     const [addr, name] = tokenContract.split(".");
     return {

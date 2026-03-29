@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getNftOwner = getNftOwner;
 exports.getLastTokenId = getLastTokenId;
 const transactions_1 = require("@stacks/transactions");
-const contracts_1 = require("@stacks-helpers/contracts");
-const types_1 = require("@stacks-helpers/types");
+const contracts_1 = require("@thebabalola/contracts");
+const types_1 = require("@richiey1/types");
 async function getNftOwner(nftContract, tokenId, senderAddress, networkUrl = types_1.API_URLS.mainnet) {
     const [addr, name] = nftContract.split(".");
     try {

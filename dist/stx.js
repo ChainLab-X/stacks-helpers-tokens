@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getStxBalance = getStxBalance;
-const types_1 = require("@stacks-helpers/types");
+const types_1 = require("@richiey1/types");
 async function getStxBalance(address, networkUrl = types_1.API_URLS.mainnet) {
     const resp = await fetch(`${networkUrl}/extended/v1/address/${address}/balances`);
     if (!resp.ok)
